@@ -1,2 +1,3 @@
-# supp-models-ac
-Supplementary material to the paper "Improved Regression Models for Algorithm Configuration".
+Supplementary material to the article: **Improved Regression Models for Algorithm Configuration**
+
+[content will be added soon]
