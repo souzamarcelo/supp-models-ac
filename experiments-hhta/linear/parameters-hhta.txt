@@ -1,0 +1,8 @@
+### Parameter file for the HYBRID-EA COLORING software
+# name		    switch              type    values
+param_tenure_min    "--param_tenure_min "   i   (1, 60)
+param_tenure_max    "--param_tenure_max "   i   (1, 395)
+param_e_min         "--param_e_min "        i   (1, 100)
+param_e_max         "--param_e_max "        i   (1, 100)
+param_gamma_min     "--param_gamma_min "    r   (0.1, 0.5)
+param_gamma_max     "--param_gamma_max "    r   (0.1, 0.5)

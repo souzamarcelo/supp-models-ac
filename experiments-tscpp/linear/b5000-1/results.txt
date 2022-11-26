@@ -1,0 +1,191 @@
+#------------------------------------------------------------------------------
+# irace: An implementation in R of (Elitist) Iterated Racing
+# Version: 3.3.2238:2239
+# Copyright (C) 2010-2019
+# Manuel Lopez-Ibanez     <manuel.lopez-ibanez@manchester.ac.uk>
+# Jeremie Dubois-Lacoste  
+# Leslie Perez Caceres    <leslie.perez.caceres@ulb.ac.be>
+#
+# This is free software, and you are welcome to redistribute it under certain
+# conditions.  See the GNU General Public License for details. There is NO
+# WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# irace builds upon previous code from the race package:
+#     race: Racing methods for the selection of the best
+#     Copyright (C) 2003 Mauro Birattari
+#------------------------------------------------------------------------------
+# installed at: /home/souza/R/x86_64-pc-linux-gnu-library/3.6/irace
+# called with: --parallel 6 --max-experiments 5000 --exec-dir ./b5000-1
+Warning: A default scenario file './scenario.txt' has been found and will be read
+# 2022-01-08 01:56:27 UTC: Initialization
+# Elitist race
+# Elitist new instances: 1
+# Elitist limit: 2
+# nbIterations: 4
+# minNbSurvival: 4
+# nbParameters: 6
+# seed: 1877606063
+# confidence level: 0.95
+# budget: 5000
+# mu: 5
+# deterministic: FALSE
+
+# 2022-01-08 01:56:27 UTC: Iteration 1 of 4
+# experimentsUsedSoFar: 0
+# remainingBudget: 5000
+# currentBudget: 1250
+# nbConfigurations: 208
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          1|        208|         72|   -17127.00000|        208|00:05:54|   NA|  NA|    NA|
+|x|          2|        208|         72|   -9267.000000|        416|00:05:54|-0.00|0.50|1.0094|
+|x|          3|        208|         46|   -80425.33333|        624|00:05:54|+0.17|0.44|0.8142|
+|x|          4|        208|        113|   -79047.75000|        832|00:05:54|+0.04|0.28|0.9178|
+|-|          5|        137|         11|   -64748.00000|       1040|00:05:54|-0.11|0.11|1.0748|
+|=|          6|        137|        189|   -91104.00000|       1177|00:03:52|-0.07|0.11|1.0478|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:         189    mean value:    -91104.00000
+Description of the best-so-far configuration:
+    .ID. tenure_min tenure_max pertsize_min pertsize_max candpert_min candpert_max .PARENT.
+189  189         21         76           77           30           50           34       NA
+
+# 2022-01-08 02:29:52 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    tenure_min tenure_max pertsize_min pertsize_max candpert_min candpert_max
+189         21         76           77           30           50           34
+90          78         64           35           42           16           46
+177         51         72           32           47           17           43
+129         75         87           63            9           14           22
+# 2022-01-08 02:29:52 UTC: Iteration 2 of 4
+# experimentsUsedSoFar: 1177
+# remainingBudget: 3823
+# currentBudget: 1274
+# nbConfigurations: 185
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          7|        185|        189|   -1407.000000|        185|00:05:13|   NA|  NA|    NA|
+|x|          6|        185|        189|   -112082.0000|        366|00:05:13|+0.02|0.51|0.9639|
+|x|          2|        185|        189|   -75190.33333|        547|00:05:13|+0.02|0.35|0.9285|
+|x|          1|        185|        327|   -60670.75000|        728|00:05:14|+0.02|0.26|0.9299|
+|-|          3|        142|        331|   -93046.40000|        909|00:05:13|-0.10|0.12|0.6381|
+|=|          4|        142|        331|   -90026.00000|       1047|00:03:52|-0.06|0.12|0.6911|
+|=|          5|        142|        211|   -78269.85714|       1185|00:03:52|-0.04|0.11|0.7176|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:         211    mean value:    -78269.85714
+Description of the best-so-far configuration:
+    .ID. tenure_min tenure_max pertsize_min pertsize_max candpert_min candpert_max .PARENT.
+211  211         30         78           45           50           40           34      189
+
+# 2022-01-08 03:03:46 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    tenure_min tenure_max pertsize_min pertsize_max candpert_min candpert_max
+211         30         78           45           50           40           34
+189         21         76           77           30           50           34
+90          78         64           35           42           16           46
+331         66         79           54            8            2           50
+# 2022-01-08 03:03:46 UTC: Iteration 3 of 4
+# experimentsUsedSoFar: 2362
+# remainingBudget: 2638
+# currentBudget: 1319
+# nbConfigurations: 168
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          8|        168|        423|   -17127.00000|        168|00:04:43|   NA|  NA|    NA|
+|x|          7|        168|        423|   -9267.000000|        332|00:04:43|+0.01|0.51|0.9696|
+|x|          6|        168|        481|   -80430.33333|        496|00:04:43|+0.01|0.34|0.9841|
+|x|          5|        168|        481|   -62255.75000|        660|00:04:43|+0.02|0.27|0.9582|
+|=|          3|        168|        189|   -94349.00000|        824|00:04:43|+0.02|0.21|0.9707|
+|=|          4|        168|        189|   -91111.50000|        988|00:04:43|+0.01|0.17|0.9890|
+|=|          1|        168|        462|   -80488.28571|       1152|00:04:43|+0.01|0.15|0.9839|
+|=|          2|        168|        462|   -70603.12500|       1316|00:04:43|+0.02|0.14|0.9840|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:         462    mean value:    -70603.12500
+Description of the best-so-far configuration:
+    .ID. tenure_min tenure_max pertsize_min pertsize_max candpert_min candpert_max .PARENT.
+462  462         23         91           45           66           48           31      211
+
+# 2022-01-08 03:41:34 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    tenure_min tenure_max pertsize_min pertsize_max candpert_min candpert_max
+462         23         91           45           66           48           31
+523         44         86           43           41           38           23
+445         16         75           84           24           48           26
+189         21         76           77           30           50           34
+# 2022-01-08 03:41:34 UTC: Iteration 4 of 4
+# experimentsUsedSoFar: 3678
+# remainingBudget: 1322
+# currentBudget: 1322
+# nbConfigurations: 150
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          9|        150|        462|   -74924.00000|        150|00:04:12|   NA|  NA|    NA|
+|x|          1|        150|        556|   -46025.50000|        296|00:04:13|-0.19|0.41|1.1631|
+|x|          6|        150|        570|   -104931.6667|        442|00:04:13|-0.08|0.28|1.0252|
+|x|          2|        150|        570|   -79050.50000|        588|00:04:12|-0.05|0.21|0.7609|
+|=|          3|        150|        523|   -107768.8000|        734|00:04:13|+0.01|0.21|0.7857|
+|=|          7|        150|        523|   -90041.83333|        880|00:04:12|+0.01|0.17|0.6562|
+|=|          8|        150|        523|   -79625.42857|       1026|00:04:13|+0.01|0.15|0.7052|
+|=|          5|        150|        462|   -70603.12500|       1172|00:04:13|-0.01|0.12|0.7508|
+|=|          4|        150|        462|   -71083.22222|       1318|00:04:12|-0.01|0.10|0.7812|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:         462    mean value:    -71083.22222
+Description of the best-so-far configuration:
+    .ID. tenure_min tenure_max pertsize_min pertsize_max candpert_min candpert_max .PARENT.
+462  462         23         91           45           66           48           31      211
+
+# 2022-01-08 04:19:32 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    tenure_min tenure_max pertsize_min pertsize_max candpert_min candpert_max
+462         23         91           45           66           48           31
+523         44         86           43           41           38           23
+659         12         79           80           13           46           23
+445         16         75           84           24           48           26
+# 2022-01-08 04:19:32 UTC: Stopped because there is not enough budget left to race more than the minimum (4)
+# You may either increase the budget or set 'minNbSurvival' to a lower value
+# Iteration: 5
+# nbIterations: 5
+# experimentsUsedSoFar: 4996
+# timeUsed: 0
+# remainingBudget: 4
+# currentBudget: 4
+# number of elites: 4
+# nbConfigurations: 4
+# Best configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    tenure_min tenure_max pertsize_min pertsize_max candpert_min candpert_max
+462         23         91           45           66           48           31
+523         44         86           43           41           38           23
+659         12         79           80           13           46           23
+445         16         75           84           24           48           26
+# Best configurations as commandlines (first number is the configuration ID; same order as above):
+462  -t_min 23 -t_max 91 -p_min 45 -p_max 66 -c_min 48 -c_max 31
+523  -t_min 44 -t_max 86 -p_min 43 -p_max 41 -c_min 38 -c_max 23
+659  -t_min 12 -t_max 79 -p_min 80 -p_max 13 -c_min 46 -c_max 23
+445  -t_min 16 -t_max 75 -p_min 84 -p_max 24 -c_min 48 -c_max 26

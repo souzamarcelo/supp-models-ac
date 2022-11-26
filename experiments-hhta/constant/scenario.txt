@@ -1,0 +1,5 @@
+parameterFile = "./parameters-hhta.txt"
+trainInstancesDir = "./instances-train"
+maxExperiments = 1000
+digits = 2
+targetRunner = "./target-runner.py"

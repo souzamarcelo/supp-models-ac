@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+rm ilsbqp >> /dev/null;
+rm -r build >> /dev/null;
+mkdir build >> /dev/null;
+cd build >> /dev/null;
+cmake .. >> /dev/null;
+make >> /dev/null;
+cp ilsbqp .. >> /dev/null;
+cd .. >> /dev/null;
+rm -r build >> /dev/null;

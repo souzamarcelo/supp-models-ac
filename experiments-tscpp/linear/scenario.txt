@@ -1,0 +1,4 @@
+parameterFile = "./parameters-tscpp.txt"
+trainInstancesDir = "./instances-train"
+digits = 2
+targetRunner = "./target-runner.py"

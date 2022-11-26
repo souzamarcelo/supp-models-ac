@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+rm tscpp &> /dev/null;
+g++ -O3 cpp_3_phase.cpp struct.h utility.cpp -o tscpp;

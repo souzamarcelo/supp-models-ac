@@ -1,0 +1,195 @@
+#------------------------------------------------------------------------------
+# irace: An implementation in R of (Elitist) Iterated Racing
+# Version: 3.3.2238:2239
+# Copyright (C) 2010-2019
+# Manuel Lopez-Ibanez     <manuel.lopez-ibanez@manchester.ac.uk>
+# Jeremie Dubois-Lacoste  
+# Leslie Perez Caceres    <leslie.perez.caceres@ulb.ac.be>
+#
+# This is free software, and you are welcome to redistribute it under certain
+# conditions.  See the GNU General Public License for details. There is NO
+# WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# irace builds upon previous code from the race package:
+#     race: Racing methods for the selection of the best
+#     Copyright (C) 2003 Mauro Birattari
+#------------------------------------------------------------------------------
+# installed at: /home/souza/R/x86_64-pc-linux-gnu-library/3.6/irace
+# called with: --parallel 5 --max-experiments 1000 --exec-dir ./b1000-1
+Warning: A default scenario file './scenario.txt' has been found and will be read
+# 2021-12-21 19:21:40 UTC: Initialization
+# Elitist race
+# Elitist new instances: 1
+# Elitist limit: 2
+# nbIterations: 3
+# minNbSurvival: 3
+# nbParameters: 3
+# seed: 269515742
+# confidence level: 0.95
+# budget: 1000
+# mu: 5
+# deterministic: FALSE
+
+# 2021-12-21 19:21:40 UTC: Iteration 1 of 3
+# experimentsUsedSoFar: 0
+# remainingBudget: 1000
+# currentBudget: 333
+# nbConfigurations: 55
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          1|         55|         25|    21.20000000|         55|00:03:40|   NA|  NA|    NA|
+|x|          2|         55|         38|    15.54450000|        110|00:03:40|+0.91|0.96|0.0816|
+|x|          3|         55|         38|    10.67133333|        165|00:03:40|+0.51|0.68|0.4725|
+|x|          4|         55|         41|    26.57050000|        220|00:03:40|+0.57|0.68|0.4291|
+|-|          5|         20|         41|    31.80820000|        275|00:03:41|+0.09|0.27|0.6882|
+|=|          6|         20|         41|    27.83183333|        295|00:01:20|+0.06|0.22|0.7402|
+|=|          7|         20|         25|    31.37950000|        315|00:01:20|+0.04|0.18|0.7887|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          25    mean value:     31.37950000
+Description of the best-so-far configuration:
+   .ID. param_tenure param_e param_gamma .PARENT.
+25   25          172      17        0.18       NA
+
+# 2021-12-21 19:42:44 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   param_tenure param_e param_gamma
+25          172      17        0.18
+41          150      17        0.42
+4           154      14        0.11
+# 2021-12-21 19:42:44 UTC: Iteration 2 of 3
+# experimentsUsedSoFar: 315
+# remainingBudget: 685
+# currentBudget: 342
+# nbConfigurations: 45
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          8|         45|         83|    24.83800000|         45|00:03:00|   NA|  NA|    NA|
+|x|          6|         45|         83|    16.39400000|         87|00:03:00|+0.22|0.61|0.6543|
+|x|          4|         45|         83|    35.61266667|        129|00:03:00|+0.30|0.53|0.6030|
+|x|          2|         45|         87|    28.95650000|        171|00:03:00|+0.36|0.52|0.4697|
+|-|          3|         25|         87|    23.35020000|        213|00:03:00|-0.02|0.19|0.7645|
+|=|          1|         25|         87|    23.00016667|        235|00:01:40|+0.02|0.18|0.7452|
+|=|          5|         25|         85|    27.23071429|        257|00:01:40|-0.02|0.13|0.7934|
+|=|          7|         25|         85|    30.58100000|        279|00:01:40|+0.01|0.13|0.7933|
+|=|          9|         25|         85|    39.41644444|        304|00:01:40|+0.04|0.14|0.7944|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          85    mean value:     39.41644444
+Description of the best-so-far configuration:
+   .ID. param_tenure param_e param_gamma .PARENT.
+85   85          178      28        0.16       25
+
+# 2021-12-21 20:04:27 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   param_tenure param_e param_gamma
+85          178      28        0.16
+25          172      17        0.18
+87          146      28        0.18
+# 2021-12-21 20:04:27 UTC: Iteration 3 of 3
+# experimentsUsedSoFar: 619
+# remainingBudget: 381
+# currentBudget: 381
+# nbConfigurations: 40
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|         10|         40|         85|    1.221000000|         40|00:02:40|   NA|  NA|    NA|
+|x|          4|         40|         85|    37.63550000|         77|00:02:40|+0.00|0.50|0.4875|
+|x|          8|         40|        134|    33.36966667|        114|00:02:40|+0.24|0.49|0.4344|
+|x|          1|         40|        101|    30.25400000|        151|00:02:40|+0.40|0.55|0.3760|
+|-|          6|         24|        101|    25.79320000|        188|00:02:40|-0.03|0.18|0.7821|
+|=|          3|         24|        101|    21.64850000|        209|00:01:40|-0.02|0.15|0.6492|
+|=|          5|         24|        101|    25.99600000|        230|00:01:40|+0.03|0.17|0.6645|
+|-|          7|         17|        101|    29.50062500|        251|00:01:40|-0.03|0.10|0.7088|
+|=|          9|         17|        131|    38.33144444|        265|00:01:00|-0.01|0.10|0.7130|
+|=|          2|         17|        131|    35.37940000|        279|00:01:00|-0.02|0.08|0.7462|
+|=|         11|         17|        131|    33.46763636|        296|00:01:20|-0.05|0.05|0.8018|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:         131    mean value:     33.46763636
+Description of the best-so-far configuration:
+    .ID. param_tenure param_e param_gamma .PARENT.
+131  131          177      19        0.21       25
+
+# 2021-12-21 20:26:10 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    param_tenure param_e param_gamma
+131          177      19        0.21
+124          162      28        0.17
+113          170      28        0.17
+# 2021-12-21 20:26:10 UTC: Iteration 4 of 4
+# experimentsUsedSoFar: 915
+# remainingBudget: 85
+# currentBudget: 85
+# nbConfigurations: 9
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|         12|          9|        139|    23.57500000|          9|00:00:40|   NA|  NA|    NA|
+|x|          4|          9|        136|    49.03125000|         15|00:00:40|-0.46|0.27|1.3217|
+|x|         10|          9|        136|    33.09450000|         21|00:00:40|-0.23|0.18|0.7369|
+|x|          7|          9|        131|    38.46037500|         27|00:00:40|-0.11|0.16|0.7228|
+|=|         11|          9|        139|    33.33580000|         33|00:00:40|-0.09|0.13|0.7780|
+|=|          1|          9|        131|    31.49858333|         39|00:00:40|-0.11|0.07|0.8118|
+|=|          2|          9|        131|    28.25750000|         45|00:00:40|-0.02|0.13|0.7743|
+|=|          9|          9|        131|    38.43156250|         51|00:00:40|+0.05|0.17|0.7552|
+|=|          3|          9|        131|    34.26416667|         57|00:00:40|+0.04|0.15|0.6738|
+|=|          5|          9|        131|    35.94805000|         63|00:00:40|+0.06|0.15|0.6904|
+|=|          8|          9|        131|    34.97559091|         69|00:00:40|-0.01|0.08|0.7346|
+|=|          6|          9|        131|    32.72345833|         75|00:00:40|-0.01|0.08|0.6727|
+|=|         13|          9|        131|    35.90626923|         84|00:00:40|-0.03|0.05|0.6902|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:         131    mean value:     35.90626923
+Description of the best-so-far configuration:
+    .ID. param_tenure param_e param_gamma .PARENT.
+131  131          177      19        0.21       25
+
+# 2021-12-21 20:34:51 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    param_tenure param_e param_gamma
+131          177      19        0.21
+124          162      28        0.17
+113          170      28        0.17
+# 2021-12-21 20:34:51 UTC: Stopped because there is not enough budget left to race more than the minimum (3)
+# You may either increase the budget or set 'minNbSurvival' to a lower value
+# Iteration: 5
+# nbIterations: 5
+# experimentsUsedSoFar: 999
+# timeUsed: 0
+# remainingBudget: 1
+# currentBudget: 1
+# number of elites: 3
+# nbConfigurations: 2
+# Best configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    param_tenure param_e param_gamma
+131          177      19        0.21
+124          162      28        0.17
+113          170      28        0.17
+# Best configurations as commandlines (first number is the configuration ID; same order as above):
+131  --param_tenure 177 --param_e 19 --param_gamma 0.21
+124  --param_tenure 162 --param_e 28 --param_gamma 0.17
+113  --param_tenure 170 --param_e 28 --param_gamma 0.17

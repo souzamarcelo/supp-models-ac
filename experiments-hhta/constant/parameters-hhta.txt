@@ -1,0 +1,5 @@
+### Parameter file for the HYBRID-EA COLORING software
+# name		    switch              type    values
+param_tenure    "--param_tenure "   i   (1, 395)
+param_e         "--param_e "        i   (1, 100)
+param_gamma     "--param_gamma "    r   (0.1, 0.5)

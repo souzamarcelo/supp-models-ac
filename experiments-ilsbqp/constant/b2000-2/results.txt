@@ -1,0 +1,181 @@
+#------------------------------------------------------------------------------
+# irace: An implementation in R of (Elitist) Iterated Racing
+# Version: 3.3.2238:2239
+# Copyright (C) 2010-2019
+# Manuel Lopez-Ibanez     <manuel.lopez-ibanez@manchester.ac.uk>
+# Jeremie Dubois-Lacoste  
+# Leslie Perez Caceres    <leslie.perez.caceres@ulb.ac.be>
+#
+# This is free software, and you are welcome to redistribute it under certain
+# conditions.  See the GNU General Public License for details. There is NO
+# WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# irace builds upon previous code from the race package:
+#     race: Racing methods for the selection of the best
+#     Copyright (C) 2003 Mauro Birattari
+#------------------------------------------------------------------------------
+# installed at: /home/souza/R/x86_64-pc-linux-gnu-library/3.6/irace
+# called with: --iterations 4 --parallel 5 --max-experiments 2000 --exec-dir ./b2000-2
+Warning: A default scenario file './scenario.txt' has been found and will be read
+# 2021-12-17 04:12:19 UTC: Initialization
+# Elitist race
+# Elitist new instances: 1
+# Elitist limit: 2
+# nbIterations: 4
+# minNbSurvival: 2
+# nbParameters: 1
+# seed: 814975555
+# confidence level: 0.95
+# budget: 2000
+# mu: 5
+# deterministic: FALSE
+
+# 2021-12-17 04:12:19 UTC: Iteration 1 of 4
+# experimentsUsedSoFar: 0
+# remainingBudget: 2000
+# currentBudget: 500
+# nbConfigurations: 83
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          1|         83|          2|   -116586.0000|         83|00:02:16|   NA|  NA|    NA|
+|x|          2|         83|          2|   -221651.0000|        166|00:04:15|+0.42|0.71|0.5326|
+|x|          3|         83|          2|   -189596.3333|        249|00:02:16|+0.16|0.44|0.3945|
+|x|          4|         83|          2|   -220730.7500|        332|00:04:15|+0.22|0.41|0.5127|
+|-|          5|         22|          2|   -474636.4000|        415|00:08:32|+0.00|0.20|0.9285|
+|-|          6|         12|          2|   -447591.0000|        437|00:01:15|+0.24|0.37|0.7158|
+|-|          7|          7|          2|   -390164.7143|        449|00:00:12|+0.17|0.29|0.4344|
+|=|          8|          7|          2|   -346449.3750|        456|00:00:08|+0.14|0.25|0.3870|
+|=|          9|          7|         30|   -476199.4444|        463|00:01:00|+0.04|0.14|0.4621|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          30    mean value:    -476199.4444
+Description of the best-so-far configuration:
+   .ID. pertsize .PARENT.
+30   30      159       NA
+
+# 2021-12-17 04:36:33 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   pertsize
+30      159
+2       209
+# 2021-12-17 04:36:33 UTC: Iteration 2 of 4
+# experimentsUsedSoFar: 463
+# remainingBudget: 1537
+# currentBudget: 512
+# nbConfigurations: 53
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|         10|         53|        115|   -1483166.000|         53|00:05:31|   NA|  NA|    NA|
+|x|          3|         53|        115|   -804326.5000|        104|00:01:28|+0.00|0.50|0.4906|
+|x|          6|         53|        115|   -640339.0000|        155|00:02:45|-0.01|0.33|0.6725|
+|x|          8|         53|        115|   -490364.7500|        206|00:00:44|-0.01|0.24|0.4998|
+|=|          1|         53|        115|   -415609.0000|        257|00:01:28|-0.02|0.18|0.5971|
+|=|          4|         53|        115|   -398696.5000|        308|00:02:45|+0.02|0.19|0.6492|
+|=|          2|         53|        115|   -388413.5714|        359|00:02:45|+0.04|0.18|0.6754|
+|=|          9|         53|        104|   -528847.0000|        410|00:05:31|+0.04|0.16|0.7056|
+|=|          7|         53|        104|   -475153.6667|        461|00:00:44|+0.04|0.14|0.6305|
+|=|          5|         53|        104|   -576469.7000|        512|00:05:31|+0.03|0.12|0.6752|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:         104    mean value:    -576469.7000
+Description of the best-so-far configuration:
+    .ID. pertsize .PARENT.
+104  104      197        2
+
+# 2021-12-17 05:05:49 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    pertsize
+104      197
+112      212
+# 2021-12-17 05:05:49 UTC: Iteration 3 of 4
+# experimentsUsedSoFar: 975
+# remainingBudget: 1025
+# currentBudget: 512
+# nbConfigurations: 48
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|         11|         48|        104|   -130619.0000|         48|00:01:20|   NA|  NA|    NA|
+|x|          9|         48|        112|   -823281.5000|         94|00:05:01|+0.00|0.50|0.4896|
+|x|          1|         48|        112|   -587716.3333|        140|00:01:20|-0.17|0.22|0.7427|
+|x|          8|         48|        112|   -450897.7500|        186|00:00:40|-0.11|0.16|0.5346|
+|=|          3|         48|        112|   -385815.6000|        232|00:01:20|-0.09|0.13|0.4186|
+|=|          5|         48|        175|   -570014.5000|        278|00:05:01|-0.07|0.11|0.5199|
+|=|          2|         48|        175|   -535257.5714|        324|00:02:30|-0.05|0.10|0.4413|
+|=|          4|         48|        175|   -507607.8750|        370|00:02:30|-0.03|0.10|0.5095|
+|=|          7|         48|        175|   -456274.4444|        416|00:00:40|-0.03|0.09|0.4507|
+|=|          6|         48|        175|   -441883.4000|        462|00:02:30|-0.02|0.08|0.4942|
+|=|         10|         48|        175|   -536487.0909|        508|00:05:01|-0.02|0.07|0.5399|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:         175    mean value:    -536487.0909
+Description of the best-so-far configuration:
+    .ID. pertsize .PARENT.
+175  175      233      112
+
+# 2021-12-17 05:33:46 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    pertsize
+175      233
+112      212
+# 2021-12-17 05:33:46 UTC: Iteration 4 of 4
+# experimentsUsedSoFar: 1483
+# remainingBudget: 517
+# currentBudget: 517
+# nbConfigurations: 44
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|         12|         44|        175|   -47961.00000|         44|00:00:36|   NA|  NA|    NA|
+|x|          1|         44|        175|   -82273.50000|         86|00:01:12|+0.00|0.50|0.4886|
+|x|          7|         44|        175|   -70051.33333|        128|00:00:36|+0.00|0.33|0.3258|
+|x|          4|         44|        112|   -131072.0000|        170|00:02:15|+0.06|0.30|0.4799|
+|=|          9|         44|        112|   -408046.4000|        212|00:04:31|-0.00|0.20|0.6002|
+|=|         11|         44|        112|   -361808.5000|        254|00:01:12|-0.00|0.16|0.6495|
+|=|          6|         44|        112|   -354745.0000|        296|00:02:15|+0.01|0.15|0.6804|
+|=|          3|         44|        112|   -326087.7500|        338|00:01:12|+0.01|0.14|0.7190|
+|=|          2|         44|        112|   -326157.5556|        380|00:02:15|+0.02|0.13|0.7207|
+|=|          5|         44|        205|   -442377.6000|        422|00:04:31|-0.03|0.07|0.7695|
+|=|         10|         44|        175|   -537170.6364|        464|00:04:31|-0.03|0.07|0.8028|
+|=|          8|         44|        175|   -495776.5833|        506|00:00:36|-0.02|0.06|0.7356|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:         175    mean value:    -495776.5833
+Description of the best-so-far configuration:
+    .ID. pertsize .PARENT.
+175  175      233      112
+
+# 2021-12-17 05:59:32 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    pertsize
+175      233
+204      233
+# Best configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    pertsize
+175      233
+204      233
+# Best configurations as commandlines (first number is the configuration ID; same order as above):
+175  --pertsize 233
+204  --pertsize 233

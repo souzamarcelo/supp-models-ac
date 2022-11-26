@@ -1,0 +1,180 @@
+#------------------------------------------------------------------------------
+# irace: An implementation in R of (Elitist) Iterated Racing
+# Version: 3.4.1.9fcaeaf
+# Copyright (C) 2010-2020
+# Manuel Lopez-Ibanez     <manuel.lopez-ibanez@manchester.ac.uk>
+# Jeremie Dubois-Lacoste  
+# Leslie Perez Caceres    <leslie.perez.caceres@ulb.ac.be>
+#
+# This is free software, and you are welcome to redistribute it under certain
+# conditions.  See the GNU General Public License for details. There is NO
+# WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+#
+# irace builds upon previous code from the race package:
+#     race: Racing methods for the selection of the best
+#     Copyright (C) 2003 Mauro Birattari
+#------------------------------------------------------------------------------
+# installed at: /home/souza/R/x86_64-pc-linux-gnu-library/3.6/irace
+# called with: --parallel 6 --iterations 4 --max-experiments 1000 --exec-dir ./b1000-4
+Warning: A default scenario file './scenario.txt' has been found and will be read
+# 2021-12-30 17:47:30 UTC: Initialization
+# Elitist race
+# Elitist new instances: 1
+# Elitist limit: 2
+# nbIterations: 4
+# minNbSurvival: 3
+# nbParameters: 2
+# seed: 989380624
+# confidence level: 0.95
+# budget: 1000
+# mu: 5
+# deterministic: FALSE
+
+# 2021-12-30 17:47:30 UTC: Iteration 1 of 4
+# experimentsUsedSoFar: 0
+# remainingBudget: 1000
+# currentBudget: 250
+# nbConfigurations: 41
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          1|         41|         13|    1614.000000|         41|00:00:42|   NA|  NA|    NA|
+|x|          2|         41|         13|    3554.500000|         82|00:01:45|+0.85|0.93|0.1683|
+|x|          3|         41|         11|    3156.333333|        123|00:01:24|+0.81|0.87|0.1964|
+|x|          4|         41|         11|    3048.250000|        164|00:00:49|+0.54|0.66|0.3421|
+|-|          5|         23|         11|    4749.800000|        205|00:14:01|+0.09|0.28|0.5197|
+|=|          6|         23|         13|    4924.166667|        228|00:02:00|-0.04|0.13|0.6645|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          13    mean value:     4924.166667
+Description of the best-so-far configuration:
+   .ID. alpha_min alpha_max .PARENT.
+13   13        66        97       NA
+
+# 2021-12-30 18:08:15 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   alpha_min alpha_max
+13        66        97
+14        66        72
+20        55        63
+# 2021-12-30 18:08:15 UTC: Iteration 2 of 4
+# experimentsUsedSoFar: 228
+# remainingBudget: 772
+# currentBudget: 257
+# nbConfigurations: 39
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          7|         39|         13|    10951.00000|         39|00:07:00|   NA|  NA|    NA|
+|x|          6|         39|         13|    8374.500000|         75|00:03:00|+0.38|0.69|0.5503|
+|x|          3|         39|         76|    6368.666667|        111|00:01:12|-0.01|0.32|0.9210|
+|x|          5|         39|         76|    7665.500000|        147|00:12:00|-0.01|0.24|0.9379|
+|=|          2|         39|         13|    7231.600000|        183|00:01:30|-0.03|0.18|1.0498|
+|=|          4|         39|         13|    6480.333333|        219|00:00:42|-0.02|0.15|0.8623|
+|=|          1|         39|         13|    5785.142857|        255|00:00:36|+0.02|0.16|0.8643|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          13    mean value:     5785.142857
+Description of the best-so-far configuration:
+   .ID. alpha_min alpha_max .PARENT.
+13   13        66        97       NA
+
+# 2021-12-30 18:34:20 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   alpha_min alpha_max
+13        66        97
+63        66        98
+65        66        95
+# 2021-12-30 18:34:20 UTC: Iteration 3 of 4
+# experimentsUsedSoFar: 483
+# remainingBudget: 517
+# currentBudget: 258
+# nbConfigurations: 34
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          8|         34|         88|    6530.000000|         34|00:06:00|   NA|  NA|    NA|
+|x|          1|         34|         88|    4072.500000|         65|00:00:36|-0.18|0.41|0.9149|
+|x|          4|         34|         88|    3623.000000|         96|00:00:42|-0.09|0.27|0.6285|
+|x|          3|         34|        105|    3308.750000|        127|00:01:12|-0.15|0.14|0.7950|
+|=|          5|         34|         86|    4957.600000|        158|00:12:00|-0.10|0.12|0.7742|
+|=|          2|         34|        105|    5047.666667|        189|00:01:30|-0.04|0.13|0.8254|
+|=|          6|         34|         13|    5155.142857|        220|00:03:00|-0.06|0.09|0.8610|
+|=|          7|         34|         13|    5879.625000|        251|00:06:00|-0.03|0.10|0.8472|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          13    mean value:     5879.625000
+Description of the best-so-far configuration:
+   .ID. alpha_min alpha_max .PARENT.
+13   13        66        97       NA
+
+# 2021-12-30 19:05:26 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+   alpha_min alpha_max
+13        66        97
+63        66        98
+65        66        95
+# 2021-12-30 19:05:26 UTC: Iteration 4 of 4
+# experimentsUsedSoFar: 734
+# remainingBudget: 266
+# currentBudget: 266
+# nbConfigurations: 32
+# Markers:
+     x No test is performed.
+     c Configurations are discarded only due to capping.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+     . All alive configurations are elite and nothing is discarded
+
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          9|         32|        131|    26667.00000|         32|00:30:01|   NA|  NA|    NA|
+|x|          4|         32|        131|    14695.50000|         61|00:00:35|+0.00|0.50|0.4844|
+|x|          7|         32|         13|    13448.00000|         90|00:05:00|-0.01|0.33|0.6771|
+|x|          3|         32|         13|    10675.50000|        119|00:01:00|+0.10|0.33|0.6938|
+|-|          6|         17|         13|    9700.000000|        148|00:02:30|-0.04|0.17|0.7728|
+|=|          1|         17|         13|    8352.333333|        162|00:00:18|+0.06|0.22|0.7442|
+|=|          5|         17|         13|    8810.000000|        176|00:06:00|+0.05|0.19|0.6436|
+|=|          2|         17|         13|    8395.625000|        190|00:00:45|+0.08|0.20|0.6613|
+|=|          8|         17|         13|    8189.555556|        204|00:03:00|+0.02|0.13|0.7285|
+|=|         10|         17|         13|    7684.400000|        221|00:00:45|+0.06|0.15|0.7235|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best-so-far configuration:          13    mean value:     7684.400000
+Description of the best-so-far configuration:
+   .ID. alpha_min alpha_max .PARENT.
+13   13        66        97       NA
+
+# 2021-12-30 19:55:25 UTC: Elite configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    alpha_min alpha_max
+13         66        97
+65         66        95
+109        66        95
+# Best configurations (first number is the configuration ID; listed from best to worst according to the sum of ranks):
+    alpha_min alpha_max
+13         66        97
+65         66        95
+109        66        95
+# Best configurations as commandlines (first number is the configuration ID; same order as above):
+13   --alpha_min 66 --alpha_max 97
+65   --alpha_min 66 --alpha_max 95
+109  --alpha_min 66 --alpha_max 95

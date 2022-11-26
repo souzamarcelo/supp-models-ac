@@ -1,0 +1,7 @@
+parameterFile = "./parameters-ilsbqp.txt"
+trainInstancesDir = "./instances-train"
+trainInstancesFile = "./instances.txt"
+maxExperiments = 300
+digits = 2
+targetRunner = "./target-runner.py"
+sampleInstances = TRUE

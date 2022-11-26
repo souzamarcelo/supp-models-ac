@@ -1,0 +1,5 @@
+### Parameter file for the HYBRID-EA COLORING software
+# name		    switch              type    values
+tenure          "-t "              i   (1, 100)
+pertsize        "-p "              i   (1, 100)
+candpert        "-c "              i   (1, 50)

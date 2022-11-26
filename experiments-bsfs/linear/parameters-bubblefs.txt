@@ -1,0 +1,4 @@
+### Parameter file for the HYBRID-EA COLORING software
+# name		    switch          type    values
+alpha_min       "--alpha_min "      i       (50, 100)
+alpha_max       "--alpha_max "      i       (50, 100)

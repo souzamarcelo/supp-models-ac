@@ -1,0 +1,4 @@
+### Parameter file for the HYBRID-EA COLORING software
+# name		    switch              type    values
+pertsize_min    "--pertsize_min "   i       (1, 250)
+pertsize_max    "--pertsize_max "   i       (1, 2500)
