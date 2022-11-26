@@ -1,0 +1,6 @@
+parameterFile = "./parameters-bubblefs.txt"
+trainInstancesDir = "./instances"
+trainInstancesFile = "./instances.txt"
+digits = 2
+targetRunner = "./target-runner.py"
+sampleInstances = TRUE
